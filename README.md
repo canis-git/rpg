@@ -2,7 +2,7 @@
 Das RPG-Projekt ist im Unterricht entstanden und enthält folgende Klassen.
 
 <a class="site-logo" href="https://github.com/canis-git/rpg" title="RPG">
-	<img src="UML_overviwe.png" alt="RPG" style="width:256px;height:auto">
+	<img src="UML_overview.png" alt="RPG" style="width:auto;height:auto">
 </a>
 
 ## Main:
@@ -41,5 +41,5 @@ Die "Loot" Klasse erstellt "Hero"s und "Weapon"s mit der Hilfe von zufälligen W
 
 
 <a class="site-logo" href="https://github.com/canis-git/rpg" title="RPG">
-	<img src="UML.png" alt="RPG" style="width:256px;height:auto">
+	<img src="UML.png" alt="RPG" style="width:auto;height:auto">
 </a>
