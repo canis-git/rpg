@@ -1,6 +1,10 @@
 # RPG
 Das RPG-Projekt ist im Unterricht entstanden und enthält folgende Klassen.
 
+<a class="site-logo" href="https://github.com/canis-git/rpg" title="RPG">
+	<img src="UML.png" alt="RPG" style="width:256px;height:auto">
+</a>
+
 ## Main:
 In der "Main" Klasse ist der "entry point" des Projekts enthalten. Es werden einige Parameter festgelegt und an die "Game" Klasse übergeben.
 ## Game:
