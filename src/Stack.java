@@ -1,8 +1,8 @@
-public class Stack {
+public class Stack<T> {
 
         //      ATTRIBUTES
 
-        private Node pointer;
+        private Node<T> pointer;
 
         //      CONSTRUCTOR
         
@@ -13,18 +13,20 @@ public class Stack {
         //      NODE ACCESS
 
         public void
-        push(Node node) {
+        push(T content) {
+                Node<T> node = new Node<T>(content);
                 node.setPrevious(pointer);
                 this.pointer = node;
         }
 
-        public Node
+        public T
         pop() {
-                Node node = pointer;
-                if (node != null) {
-                        this.pointer = node.getPrevious();
+                Node<T> node = pointer;
+                if (node == null) {
+                        return null;
                 }
-                return node;
+                this.pointer = node.getPrevious();
+                return node.getContent();
         }
 
         public boolean

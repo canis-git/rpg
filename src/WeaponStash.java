@@ -2,14 +2,14 @@ public class WeaponStash {
 
         //      ATTRIBUTES
 
-        private Stack stack;
+        private Stack<Weapon> stack;
         private int size;
 
         //      CONSTRUCTOR
 
         public
         WeaponStash() {
-                this.stack = new Stack();
+                this.stack = new Stack<Weapon>();
                 this.size = 0;
         }
                 
@@ -17,8 +17,7 @@ public class WeaponStash {
 
         public void
         addWeapon(Weapon weapon) {
-                Node stored = new Node(weapon);
-                this.stack.push(stored);
+                this.stack.push(weapon);
                 this.size++;
         }
         public Weapon
@@ -26,10 +25,8 @@ public class WeaponStash {
                 if (this.size == 0) {
                         return null;
                 }
-                Node stored = this.stack.pop();
-                Weapon weapon = (Weapon)stored.getContent();
                 this.size--;
-                return weapon;
+                return this.stack.pop();
         }
 
         public int

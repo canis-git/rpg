@@ -1,7 +1,7 @@
 .PHONY: default run clean
 
 default: out src
-	@javac -d out src/*.java
+	@javac -Xlint:unchecked -d out src/*.java
 
 run: default
 	@cd out; java Main; cd ..
