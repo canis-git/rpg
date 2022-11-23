@@ -2,7 +2,7 @@
 Das RPG-Projekt ist im Unterricht entstanden und enthält folgende Klassen.
 
 ### Achtung
-Dieses Projekt kann nicht mit dem Java-Editor ausgeführt werden. Es werden leichte Modifikationen benötigt um nicht ASCII Zeichen zu eliminieren. Außerdem ist der Output an eine Unix System angepasst und hat unter Windows leichte Nebeneffekte. Ich hoffe, sie können sich an die Demonstation im Unterricht erinnern, sonst bildet der Screenshot die Benutzteroberfläche noch einmals ab.
+Dieses Projekt kann nicht mit dem Java-Editor ausgeführt werden. Der Nutzter muss in einem Terminal die [Release-Datei](https://github.com/canis-git/rpg/releases), mit dem Befehl "java -jar Rpg.jar" ausführen, er ist ebenfallse in der "Makefile" Datei enthalten. Es werden leichte Modifikationen benötigt um nicht ASCII Zeichen zu eliminieren. Außerdem ist der Output an eine Unix System angepasst und hat unter Windows leichte Nebeneffekte. Ich hoffe, sie können sich an die Demonstation im Unterricht erinnern, sonst bildet der Screenshot die Benutzteroberfläche noch einmals ab.
 
 ![UML Collapsed](diagram-collapsed.png)
 
@@ -11,10 +11,7 @@ In der "Main" Klasse ist der "entry point" des Projekts enthalten. Es werden ein
 ## Game:
 Die "Game" Klasse kümmert sich um alle weiteren Ausführungsschritte im Program. Ähnlich wie ein Arduino Projekt gibt es eine "setup" und eine "loop" Methode. In der "loop" wird ein fester Spielablauf festgelegt. Dieser ist nicht wirklich von Benutzereingaben abhängig. Dies ist aber sehr simpel zu implementieren. Ich hatte aber nicht die Zeit, da ich diese Version des Projekts zurückgelassen habe, um mich einer komplexeren Grafikoberfläche zuzuwenden. Diese ist aber noch nicht präsentierfähig. Aus diesem Grund ist der Spielablauf minder komplex.
 
-<a class="site-logo" href="https://github.com/canis-git/rpg" title="RPG">
-	<img src="Interface.png" alt="RPG" style="width:auto;height:auto">
-</a>
-
+![Interface](Interface.png)
 
 ## Entity:
 Alle Lebewesen in dem Spiel stammen von der "Entity" Klasse ab. Dies erleichtert jegleche Interaktion zwischen selbigen, den alle Methoden, welche heilen oder kämpfen, oder auch die "Group" Klasse, müssen sich nur auf eine Klasse beziehen. Die verhindert Quellcodedopplung zwischen "Hero" und "Monster".
