@@ -100,10 +100,10 @@ public class UI {
                 screen.addStr(height - 2, width - listWidth - 1 + (listWidth - listName.length()) / 2, listName);
                
                 int y = 4;
-                ems.toRoot();
-                while (ems.get() != null) {
+                els.toRoot();
+                while (els.get() != null) {
                         y += printEntity(screen, height - y, els.get()) + 1;
-                        ems.incIndex();
+                        els.incIndex();
                 }
                 
                 screen.fillBoarders();

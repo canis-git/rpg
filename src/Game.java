@@ -33,7 +33,8 @@ public class Game {
                 gm.move(19, 12, 1.7f);
 
 
-                ui.print(Group.concat(gh, gm), gh.getMembers());
+                //ui.print(Group.concat(gh, gm), gh.getMembers());
+                ui.print(Group.concat(gh, gm), Group.concat(gh));
 
                 System.out.print("\u001b[" + Integer.toString(height - 1) + ";2f");
                 try {System.in.read();} catch (Exception e) {}
