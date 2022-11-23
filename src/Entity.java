@@ -1,5 +1,3 @@
-package Rpg;
-
 public abstract class Entity {
 
         //      ATTRIBUTES

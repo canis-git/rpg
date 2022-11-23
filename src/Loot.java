@@ -1,4 +1,3 @@
-package Rpg;
 import java.util.Random;
 
 public class Loot {

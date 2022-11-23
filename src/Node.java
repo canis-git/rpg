@@ -1,5 +1,3 @@
-package Rpg;
-
 public class Node<T> {
         
         //      ATTRIBUTES

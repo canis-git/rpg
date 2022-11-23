@@ -1,5 +1,3 @@
-package Rpg;
-
 public class Game {
 
         private int height;

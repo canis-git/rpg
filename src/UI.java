@@ -1,5 +1,3 @@
-package Rpg;
-
 public class UI {
 
         //       ATTRIBUTES
@@ -83,10 +81,10 @@ public class UI {
                                 continue;
                         }
                         switch (ems.get().getClass().getName()) {
-                        case "Rpg.Hero":
+                        case "Hero":
                                 screen.setAttribute(4, 9, false, false, false);
                                 break;
-                        case "Rpg.Monster":
+                        case "Monster":
                                 screen.setAttribute(1, 9, false, false, false);
                                 break;
                         default:
@@ -135,7 +133,7 @@ public class UI {
                 s.addStr(y - i++, width - tmp.length() - 1, tmp);
 
                 switch (e.getClass().getName()) {
-                case "Rpg.Hero":
+                case "Hero":
                         Hero h = (Hero)e;
                 s.addChr(y - i, width - listWidth - 1, 'S');
                         tmp = Integer.toString(h.getStrength());
