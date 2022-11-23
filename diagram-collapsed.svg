@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<svg width="1113" height="393" font-family="Segoe UI" font-size="8">
+  <defs>
+    <filter style="color-interpolation-filters:sRGB;" id="Shadow">
+      <feFlood flood-opacity="1" flood-color="rgb(0,0,0)" result="flood" />
+      <feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1"/>
+      <feGaussianBlur in="composite1" stdDeviation="1.2" result="blur" />
+      <feOffset dx="1.5" dy="1.5" result="offset" />
+      <feComposite in="SourceGraphic" in2="offset" operator="over" result="composite2" />
+    </filter>
+  </defs>
+<g>
+  <line x1="446" y1="197" x2="347" y2="236" stroke="black" stroke-linecap="square" />
+  <polyline points="360,241 347,236 352,223" fill="none" stroke="black" />
+</g>
+<g>
+  <line x1="838" y1="62" x2="787" y2="101" stroke="black" stroke-linecap="square" />
+  <polyline points="801,103 787,101 789,87" fill="none" stroke="black" />
+</g>
+<g>
+  <line x1="869" y1="62" x2="926" y2="101" stroke="black" stroke-linecap="square" />
+  <polyline points="924,87 926,101 912,103" fill="none" stroke="black" />
+</g>
+<g>
+  <line x1="488" y1="62" x2="489" y2="163" stroke="black" stroke-linecap="square" />
+  <polygon points="488,62 498,72 488,82 478,72" fill="white" stroke="black" />
+</g>
+<g>
+  <line x1="505" y1="62" x2="567" y2="101" stroke="black" stroke-linecap="square" />
+  <polyline points="564,88 567,101 554,104" fill="none" stroke="black" />
+</g>
+<g>
+  <line x1="570" y1="124" x2="514" y2="163" stroke="black" stroke-linecap="square" />
+  <polygon points="570,124 568,138 554,135 556,122" fill="white" stroke="black" />
+</g>
+<g>
+  <line x1="489" y1="236" x2="489" y2="202" stroke="black" stroke-linecap="square" stroke-width="3" />
+  <polygon points="489,197 479,207 499,207" fill="white" stroke="black" />
+</g>
+<g>
+  <line x1="511" y1="259" x2="591" y2="298" stroke="black" stroke-linecap="square" />
+  <polyline points="586,285 591,298 578,303" fill="none" stroke="black" />
+</g>
+<g>
+  <line x1="631" y1="236" x2="536.7" y2="198.8" stroke="black" stroke-linecap="square" stroke-width="3" />
+  <polygon points="532,197 537,210 545,192" fill="white" stroke="black" />
+</g>
+<g>
+  <line x1="866" y1="186" x2="841" y2="236" stroke="black" stroke-linecap="square" />
+  <polyline points="854,231 841,236 836,223" fill="none" stroke="black" />
+</g>
+<g>
+  <line x1="892" y1="186" x2="985" y2="236" stroke="black" stroke-linecap="square" />
+  <polyline points="981,222 985,236 971,240" fill="none" stroke="black" />
+</g>
+<g>
+  <line x1="789" y1="124" x2="852" y2="163" stroke="black" stroke-linecap="square" />
+  <polyline points="848,149 852,163 838,167" fill="none" stroke="black" />
+</g>
+<g>
+  <line x1="615" y1="321" x2="615" y2="360" stroke="black" stroke-linecap="square" />
+  <polyline points="625,350 615,360 605,350" fill="none" stroke="black" />
+</g>
+<g>
+  <line x1="141" y1="62" x2="592" y2="298" stroke="black" stroke-linecap="square" />
+  <polygon points="141,62 155,58 159,71 145,76" fill="white" stroke="black" />
+</g>
+<g id="Dice" transform="translate(20, 299)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Dice
+</text>
+</g>
+
+<g id="Entity" transform="translate(413, 164)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="30" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="29" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle" font-style="italic">Entity
+</text>
+  <text x="75" y="23" text-anchor="middle" font-style="italic">{abstract}
+</text>
+</g>
+
+<g id="Game" transform="translate(777, 40)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Game
+</text>
+</g>
+
+<g id="Group" transform="translate(412, 40)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Group
+</text>
+</g>
+
+<g id="Healer" transform="translate(510, 102)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Healer
+</text>
+</g>
+
+<g id="Hero" transform="translate(413, 237)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Hero
+</text>
+</g>
+
+<g id="List&lt;T&gt;" transform="translate(950, 40)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">List&lt;T&gt;
+</text>
+</g>
+
+<g id="Loot" transform="translate(240, 164)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Loot
+</text>
+</g>
+
+<g id="Main" transform="translate(193, 299)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Main
+</text>
+</g>
+
+<g id="Monster" transform="translate(586, 237)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Monster
+</text>
+</g>
+
+<g id="Node&lt;T&gt;" transform="translate(20, 361)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Node&lt;T&gt;
+</text>
+</g>
+
+<g id="Queue&lt;T&gt;" transform="translate(193, 361)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Queue&lt;T&gt;
+</text>
+</g>
+
+<g id="Rules" transform="translate(868, 102)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Rules
+</text>
+</g>
+
+<g id="Screen" transform="translate(795, 164)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Screen
+</text>
+</g>
+
+<g id="Screen$Attribute" transform="translate(759, 237)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Screen.Attribute
+</text>
+</g>
+
+<g id="Screen$Cell" transform="translate(932, 237)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Screen.Cell
+</text>
+</g>
+
+<g id="Stack&lt;T&gt;" transform="translate(366, 299)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Stack&lt;T&gt;
+</text>
+</g>
+
+<g id="UI" transform="translate(695, 102)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">UI
+</text>
+</g>
+
+<g id="Vector2" transform="translate(240, 237)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Vector2
+</text>
+</g>
+
+<g id="Weapon" transform="translate(539, 299)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Weapon
+</text>
+</g>
+
+<g id="Weapon$Bonus" transform="translate(539, 361)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Weapon.Bonus
+</text>
+</g>
+
+<g id="WeaponStash" transform="translate(44, 40)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="19" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">WeaponStash
+</text>
+</g>
+
+</svg>

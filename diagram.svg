@@ -1,0 +1,641 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<svg width="1268" height="1357" font-family="Segoe UI" font-size="8">
+  <defs>
+    <filter style="color-interpolation-filters:sRGB;" id="Shadow">
+      <feFlood flood-opacity="1" flood-color="rgb(0,0,0)" result="flood" />
+      <feComposite in="flood" in2="SourceGraphic" operator="in" result="composite1"/>
+      <feGaussianBlur in="composite1" stdDeviation="1.2" result="blur" />
+      <feOffset dx="1.5" dy="1.5" result="offset" />
+      <feComposite in="SourceGraphic" in2="offset" operator="over" result="composite2" />
+    </filter>
+  </defs>
+<g>
+  <line x1="435" y1="770" x2="383" y2="828" stroke="black" stroke-linecap="square" />
+  <polyline points="397,828 383,828 383,814" fill="none" stroke="black" />
+</g>
+<g>
+  <line x1="806" y1="142" x2="773" y2="357" stroke="black" stroke-linecap="square" />
+  <polyline points="785,349 773,357 765,345" fill="none" stroke="black" />
+</g>
+<g>
+  <line x1="836" y1="142" x2="927" y2="357" stroke="black" stroke-linecap="square" />
+  <polyline points="932,344 927,357 914,352" fill="none" stroke="black" />
+</g>
+<g>
+  <line x1="457" y1="208" x2="510" y2="543" stroke="black" stroke-linecap="square" />
+  <polygon points="457,208 469,216 460,228 449,220" fill="white" stroke="black" />
+</g>
+<g>
+  <line x1="480" y1="208" x2="543" y2="357" stroke="black" stroke-linecap="square" />
+  <polyline points="548,344 543,357 530,352" fill="none" stroke="black" />
+</g>
+<g>
+  <line x1="556" y1="449" x2="544" y2="543" stroke="black" stroke-linecap="square" />
+  <polygon points="556,449 565,460 553,469 545,458" fill="white" stroke="black" />
+</g>
+<g>
+  <line x1="561" y1="828" x2="554" y2="793.9" stroke="black" stroke-linecap="square" stroke-width="3" />
+  <polygon points="553,789 545,801 565,797" fill="white" stroke="black" />
+</g>
+<g>
+  <line x1="594" y1="920" x2="638" y2="1003" stroke="black" stroke-linecap="square" />
+  <polyline points="642,989 638,1003 624,999" fill="none" stroke="black" />
+</g>
+<g>
+  <line x1="781" y1="828" x2="627.2" y2="728.7" stroke="black" stroke-linecap="square" stroke-width="3" />
+  <polygon points="623,726 626,739 636,723" fill="white" stroke="black" />
+</g>
+<g>
+  <line x1="993" y1="745" x2="1001" y2="828" stroke="black" stroke-linecap="square" />
+  <polyline points="1010,817 1001,828 990,819" fill="none" stroke="black" />
+</g>
+<g>
+  <line x1="1074" y1="745" x2="1149" y2="828" stroke="black" stroke-linecap="square" />
+  <polyline points="1149,814 1149,828 1135,828" fill="none" stroke="black" />
+</g>
+<g>
+  <line x1="837" y1="504" x2="878" y2="543" stroke="black" stroke-linecap="square" />
+  <polyline points="878,529 878,543 864,543" fill="none" stroke="black" />
+</g>
+<g>
+  <line x1="679" y1="1161" x2="679" y2="1200" stroke="black" stroke-linecap="square" />
+  <polyline points="689,1190 679,1200 669,1190" fill="none" stroke="black" />
+</g>
+<g>
+  <line x1="149" y1="142" x2="634" y2="1003" stroke="black" stroke-linecap="square" />
+  <polygon points="149,142 163,146 159,159 145,156" fill="white" stroke="black" />
+</g>
+<g id="Dice" transform="translate(20, 1004)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="77" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Dice
+</text>
+  <line x1="0" y1="18" x2="150" y2="18" stroke="black" />
+  <text x="5" y="30">-<tspan x="14">faces: int</tspan>
+</text>
+  <text x="5" y="41">-<tspan x="14">random: Random</tspan>
+</text>
+  <line x1="0" y1="47" x2="150" y2="47" stroke="black" />
+  <text x="4" y="59">c<tspan x="14">Dice(faces: int)</tspan>
+</text>
+  <text x="4" y="70">+<tspan x="14">roll(): int</tspan>
+</text>
+</g>
+
+<g id="Entity" transform="translate(436, 544)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="184" height="242" fill="white" stroke="black" />
+  <rect x="0" y="0" width="184" height="29" fill="rgb(255,255,255)" stroke="black" />
+  <text x="92" y="12" font-weight="bold" text-anchor="middle" font-style="italic">Entity
+</text>
+  <text x="92" y="23" text-anchor="middle" font-style="italic">{abstract}
+</text>
+  <line x1="0" y1="29" x2="184" y2="29" stroke="black" />
+  <text x="4" y="41">#<tspan x="14">name: String</tspan>
+</text>
+  <text x="4" y="52">#<tspan x="14">health: int</tspan>
+</text>
+  <text x="4" y="63">#<tspan x="14">healthMax: int</tspan>
+</text>
+  <text x="4" y="74">#<tspan x="14">strength: int</tspan>
+</text>
+  <text x="4" y="85">#<tspan x="14" font-weight="bold">position: Vector2</tspan>
+</text>
+  <line x1="0" y1="91" x2="184" y2="91" stroke="black" />
+  <text x="4" y="103">c<tspan x="14">Entity(name: String, health: int, strength: int)</tspan>
+</text>
+  <text x="4" y="114">+<tspan x="14">setName(name: String)</tspan>
+</text>
+  <text x="4" y="125">+<tspan x="14">getName(): String</tspan>
+</text>
+  <text x="4" y="136">+<tspan x="14">setHealth(health: int)</tspan>
+</text>
+  <text x="4" y="147">+<tspan x="14">incHealth(amount: int)</tspan>
+</text>
+  <text x="4" y="158">+<tspan x="14">getHealth(): int</tspan>
+</text>
+  <text x="4" y="169">+<tspan x="14">setHealthMax(healthMax: int)</tspan>
+</text>
+  <text x="4" y="180">+<tspan x="14">getHealthMax(): int</tspan>
+</text>
+  <text x="4" y="191">+<tspan x="14">setStrength(strength: int)</tspan>
+</text>
+  <text x="4" y="202">+<tspan x="14">getStrength(): int</tspan>
+</text>
+  <text x="4" y="213">+<tspan x="14">setPosition(y: int, x: int)</tspan>
+</text>
+  <text x="4" y="224">+<tspan x="14">getPosition(): Vector2</tspan>
+</text>
+  <text x="4" y="235">+<tspan x="14">getDamage(): int</tspan>
+</text>
+</g>
+
+<g id="Game" transform="translate(738, 40)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="99" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Game
+</text>
+  <line x1="0" y1="18" x2="150" y2="18" stroke="black" />
+  <text x="5" y="30">-<tspan x="14">height: int</tspan>
+</text>
+  <text x="5" y="41">-<tspan x="14">width: int</tspan>
+</text>
+  <text x="5" y="52">-<tspan x="14" font-weight="bold">ui: UI</tspan>
+</text>
+  <text x="5" y="63">-<tspan x="14" font-weight="bold">rules: Rules</tspan>
+</text>
+  <line x1="0" y1="69" x2="150" y2="69" stroke="black" />
+  <text x="4" y="81">c<tspan x="14">Game(height: int, width: int)</tspan>
+</text>
+  <text x="4" y="92">+<tspan x="14">loop()</tspan>
+</text>
+</g>
+
+<g id="Group" transform="translate(364, 40)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="158" height="165" fill="white" stroke="black" />
+  <rect x="0" y="0" width="158" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="79" y="12" font-weight="bold" text-anchor="middle">Group
+</text>
+  <line x1="0" y1="18" x2="158" y2="18" stroke="black" />
+  <text x="5" y="30">-<tspan x="14" font-weight="bold">members: List&lt;Entity&gt;</tspan>
+</text>
+  <text x="5" y="41">-<tspan x="14" font-weight="bold">healer: Healer</tspan>
+</text>
+  <line x1="0" y1="47" x2="158" y2="47" stroke="black" />
+  <text x="4" y="59">c<tspan x="14">Group()</tspan>
+</text>
+  <text x="4" y="70">+<tspan x="14">getSize(): int</tspan>
+</text>
+  <text x="4" y="81">+<tspan x="14">addMember(entity: Entity)</tspan>
+</text>
+  <text x="4" y="92">+<tspan x="14">removeMember(entity: Entity)</tspan>
+</text>
+  <text x="4" y="103">+<tspan x="14">getMember(index: int): Entity</tspan>
+</text>
+  <text x="4" y="114">+<tspan x="14">getMembers(): List&lt;Entity&gt;</tspan>
+</text>
+  <text x="4" y="125">+<tspan x="14">nurse(threshold: int)</tspan>
+</text>
+  <text x="4" y="136">+<tspan x="14">heal()</tspan>
+</text>
+  <text x="4" y="147">+<tspan x="14">move(y: int, x: int, density: float)</tspan>
+</text>
+  <text x="4" y="158">+<tspan x="14" text-decoration="underline">concat(groups: Group...): List&lt;Entity&gt;</tspan>
+</text>
+</g>
+
+<g id="Healer" transform="translate(486, 358)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="88" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Healer
+</text>
+  <line x1="0" y1="18" x2="150" y2="18" stroke="black" />
+  <text x="5" y="30">-<tspan x="14" font-weight="bold">queue: Queue&lt;Entity&gt;</tspan>
+</text>
+  <line x1="0" y1="36" x2="150" y2="36" stroke="black" />
+  <text x="4" y="48">c<tspan x="14">Healer()</tspan>
+</text>
+  <text x="4" y="59">+<tspan x="14">addWaiting(entity: Entity)</tspan>
+</text>
+  <text x="4" y="70">+<tspan x="14">heal(): Entity</tspan>
+</text>
+  <text x="4" y="81">+<tspan x="14">getWaiting(): int</tspan>
+</text>
+</g>
+
+<g id="Hero" transform="translate(445, 829)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="248" height="88" fill="white" stroke="black" />
+  <rect x="0" y="0" width="248" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="124" y="12" font-weight="bold" text-anchor="middle">Hero
+</text>
+  <line x1="0" y1="18" x2="248" y2="18" stroke="black" />
+  <text x="5" y="30">-<tspan x="14" font-weight="bold">weapon: Weapon</tspan>
+</text>
+  <line x1="0" y1="36" x2="248" y2="36" stroke="black" />
+  <text x="4" y="48">c<tspan x="14">Hero(name: String, health: int, strength: int, weapon: Weapon)</tspan>
+</text>
+  <text x="4" y="59">+<tspan x="14">setWeapon(weapon: Weapon)</tspan>
+</text>
+  <text x="4" y="70">+<tspan x="14">getWeapon(): Weapon</tspan>
+</text>
+  <text x="4" y="81">+<tspan x="14">getDamage(): int</tspan>
+</text>
+</g>
+
+<g id="List&lt;T&gt;" transform="translate(911, 40)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="275" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">List&lt;T&gt;
+</text>
+  <line x1="0" y1="18" x2="150" y2="18" stroke="black" />
+  <text x="5" y="30">-<tspan x="14">root: Node&lt;T&gt;</tspan>
+</text>
+  <text x="5" y="41">-<tspan x="14">pointer: Node&lt;T&gt;</tspan>
+</text>
+  <text x="5" y="52">-<tspan x="14">dummy: Node&lt;T&gt;</tspan>
+</text>
+  <text x="5" y="63">-<tspan x="14">size: int</tspan>
+</text>
+  <text x="5" y="74">-<tspan x="14">index: int</tspan>
+</text>
+  <line x1="0" y1="80" x2="150" y2="80" stroke="black" />
+  <text x="4" y="92">c<tspan x="14">List()</tspan>
+</text>
+  <text x="4" y="103">+<tspan x="14">getSize(): int</tspan>
+</text>
+  <text x="4" y="114">+<tspan x="14">setIndex(index: int): int</tspan>
+</text>
+  <text x="4" y="125">+<tspan x="14">incIndex(): int</tspan>
+</text>
+  <text x="4" y="136">+<tspan x="14">decIndex(): int</tspan>
+</text>
+  <text x="4" y="147">+<tspan x="14">getIndex(): int</tspan>
+</text>
+  <text x="4" y="158">+<tspan x="14">toRoot()</tspan>
+</text>
+  <text x="4" y="169">+<tspan x="14">toDummy()</tspan>
+</text>
+  <text x="4" y="180">+<tspan x="14">set(object: T)</tspan>
+</text>
+  <text x="4" y="191">+<tspan x="14">setAt(index: int, object: T)</tspan>
+</text>
+  <text x="4" y="202">+<tspan x="14">get(): T</tspan>
+</text>
+  <text x="4" y="213">+<tspan x="14">getAt(index: int): T</tspan>
+</text>
+  <text x="4" y="224">+<tspan x="14">append(object: T)</tspan>
+</text>
+  <text x="4" y="235">+<tspan x="14">insert(object: T)</tspan>
+</text>
+  <text x="4" y="246">+<tspan x="14">insertAt(index: int, object: T)</tspan>
+</text>
+  <text x="4" y="257">+<tspan x="14">remove()</tspan>
+</text>
+  <text x="4" y="268">+<tspan x="14">removeAt(index: int)</tspan>
+</text>
+</g>
+
+<g id="Loot" transform="translate(240, 544)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="160" height="176" fill="white" stroke="black" />
+  <rect x="0" y="0" width="160" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="80" y="12" font-weight="bold" text-anchor="middle">Loot
+</text>
+  <line x1="0" y1="18" x2="160" y2="18" stroke="black" />
+  <text x="5" y="30">-<tspan x="14" text-decoration="underline">heroNames: String[ ] = {</tspan>
+</text>
+  <text x="5" y="41">-<tspan x="14" text-decoration="underline">weaponKinds: String[ ] = {</tspan>
+</text>
+  <text x="5" y="52">-<tspan x="14" text-decoration="underline">weaponNames: String[ ] = {</tspan>
+</text>
+  <text x="5" y="63">-<tspan x="14" text-decoration="underline">weaponMaterials: Bonus[ ] = {</tspan>
+</text>
+  <text x="5" y="74">-<tspan x="14" text-decoration="underline">weaponCharms: Bonus[ ] = {</tspan>
+</text>
+  <line x1="0" y1="80" x2="160" y2="80" stroke="black" />
+  <text x="4" y="92">+<tspan x="14">genHero(): Hero</tspan>
+</text>
+  <text x="4" y="103">+<tspan x="14">genHero(tier: float): Hero</tspan>
+</text>
+  <text x="4" y="114">+<tspan x="14">genWeapon(): Weapon</tspan>
+</text>
+  <text x="4" y="125">+<tspan x="14">genWeapon(tier: float): Weapon</tspan>
+</text>
+  <text x="5" y="136">-<tspan x="14">genTier(): float</tspan>
+</text>
+  <text x="5" y="147">-<tspan x="14">genInt(tier: float, lim: int): int</tspan>
+</text>
+  <text x="5" y="158">-<tspan x="14">genFloat(tier: float): float</tspan>
+</text>
+  <text x="5" y="169">-<tspan x="14">genWeaponMultiplier(tier: float): float</tspan>
+</text>
+</g>
+
+<g id="Main" transform="translate(193, 1004)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="66" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Main
+</text>
+  <line x1="0" y1="18" x2="150" y2="18" stroke="black" />
+  <text x="4" y="30">~<tspan x="14" text-decoration="underline">height: int = 50</tspan>
+</text>
+  <text x="4" y="41">~<tspan x="14" text-decoration="underline">width: int = 150</tspan>
+</text>
+  <line x1="0" y1="47" x2="150" y2="47" stroke="black" />
+  <text x="4" y="59">+<tspan x="14" text-decoration="underline">main(args: String[ ])</tspan>
+</text>
+</g>
+
+<g id="Monster" transform="translate(716, 829)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="193" height="37" fill="white" stroke="black" />
+  <rect x="0" y="0" width="193" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="96" y="12" font-weight="bold" text-anchor="middle">Monster
+</text>
+  <line x1="0" y1="18" x2="193" y2="18" stroke="black" />
+  <text x="4" y="30">c<tspan x="14">Monster(name: String, health: int, strength: int)</tspan>
+</text>
+</g>
+
+<g id="Node&lt;T&gt;" transform="translate(20, 1201)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="143" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Node&lt;T&gt;
+</text>
+  <line x1="0" y1="18" x2="150" y2="18" stroke="black" />
+  <text x="5" y="30">-<tspan x="14">previous: Node&lt;T&gt;</tspan>
+</text>
+  <text x="5" y="41">-<tspan x="14">next: Node&lt;T&gt;</tspan>
+</text>
+  <text x="5" y="52">-<tspan x="14">content: T</tspan>
+</text>
+  <line x1="0" y1="58" x2="150" y2="58" stroke="black" />
+  <text x="4" y="70">c<tspan x="14">Node(content: T)</tspan>
+</text>
+  <text x="4" y="81">+<tspan x="14">setPrevious(previous: Node&lt;T&gt;)</tspan>
+</text>
+  <text x="4" y="92">+<tspan x="14">getPrevious(): Node&lt;T&gt;</tspan>
+</text>
+  <text x="4" y="103">+<tspan x="14">setNext(next: Node&lt;T&gt;)</tspan>
+</text>
+  <text x="4" y="114">+<tspan x="14">getNext(): Node&lt;T&gt;</tspan>
+</text>
+  <text x="4" y="125">+<tspan x="14">setContent(content: T)</tspan>
+</text>
+  <text x="4" y="136">+<tspan x="14">getContent(): T</tspan>
+</text>
+</g>
+
+<g id="Queue&lt;T&gt;" transform="translate(193, 1201)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="132" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Queue&lt;T&gt;
+</text>
+  <line x1="0" y1="18" x2="150" y2="18" stroke="black" />
+  <text x="5" y="30">-<tspan x="14">head: Node&lt;T&gt;</tspan>
+</text>
+  <text x="5" y="41">-<tspan x="14">tail: Node&lt;T&gt;</tspan>
+</text>
+  <text x="5" y="52">-<tspan x="14">size: int</tspan>
+</text>
+  <line x1="0" y1="58" x2="150" y2="58" stroke="black" />
+  <text x="4" y="70">c<tspan x="14">Queue()</tspan>
+</text>
+  <text x="4" y="81">+<tspan x="14">addTail(content: T)</tspan>
+</text>
+  <text x="4" y="92">+<tspan x="14">removeHead(): T</tspan>
+</text>
+  <text x="4" y="103">+<tspan x="14">getHead(): Node&lt;T&gt;</tspan>
+</text>
+  <text x="4" y="114">+<tspan x="14">getTail(): Node&lt;T&gt;</tspan>
+</text>
+  <text x="4" y="125">+<tspan x="14">getSize(): int</tspan>
+</text>
+</g>
+
+<g id="Rules" transform="translate(866, 358)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="163" height="99" fill="white" stroke="black" />
+  <rect x="0" y="0" width="163" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="81" y="12" font-weight="bold" text-anchor="middle">Rules
+</text>
+  <line x1="0" y1="18" x2="163" y2="18" stroke="black" />
+  <text x="5" y="30">-<tspan x="14">randomness: int</tspan>
+</text>
+  <line x1="0" y1="36" x2="163" y2="36" stroke="black" />
+  <text x="4" y="48">c<tspan x="14">Rules(randomness: int)</tspan>
+</text>
+  <text x="4" y="59">+<tspan x="14">canFight(e1: Entity, e2: Entity): boolean</tspan>
+</text>
+  <text x="4" y="70">+<tspan x="14">hit(e1: Entity, e2: Entity)</tspan>
+</text>
+  <text x="4" y="81">+<tspan x="14">fight(e1: Entity, e2: Entity)</tspan>
+</text>
+  <text x="4" y="92">+<tspan x="14">fightGroup(g1: Group, g2: Group)</tspan>
+</text>
+</g>
+
+<g id="Screen" transform="translate(854, 544)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="256" height="198" fill="white" stroke="black" />
+  <rect x="0" y="0" width="256" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="128" y="12" font-weight="bold" text-anchor="middle">Screen
+</text>
+  <line x1="0" y1="18" x2="256" y2="18" stroke="black" />
+  <text x="5" y="30">-<tspan x="14">height: int</tspan>
+</text>
+  <text x="5" y="41">-<tspan x="14">width: int</tspan>
+</text>
+  <text x="5" y="52">-<tspan x="14">screen: Cell[ ][ ]</tspan>
+</text>
+  <text x="5" y="63">-<tspan x="14">attr: Attribute</tspan>
+</text>
+  <line x1="0" y1="69" x2="256" y2="69" stroke="black" />
+  <text x="4" y="81">c<tspan x="14">Screen(height: int, width: int)</tspan>
+</text>
+  <text x="4" y="92">+<tspan x="14">clear()</tspan>
+</text>
+  <text x="4" y="103">+<tspan x="14">update()</tspan>
+</text>
+  <text x="4" y="114">+<tspan x="14">setAttribute(bg: int, fg: int, bl: boolean, it: boolean, un: boolean)</tspan>
+</text>
+  <text x="4" y="125">+<tspan x="14">addStr(y: int, x: int, str: String)</tspan>
+</text>
+  <text x="4" y="136">+<tspan x="14">addChr(y: int, x: int, ch: char)</tspan>
+</text>
+  <text x="4" y="147">+<tspan x="14">addVLine(y: int, x: int, len: int, ch: char)</tspan>
+</text>
+  <text x="4" y="158">+<tspan x="14">addHLine(y: int, x: int, len: int, ch: char)</tspan>
+</text>
+  <text x="4" y="169">+<tspan x="14">addBox(y: int, x: int, height: int, width: int)</tspan>
+</text>
+  <text x="4" y="180">+<tspan x="14">isBoarder(ch: char): boolean</tspan>
+</text>
+  <text x="4" y="191">+<tspan x="14">fillBoarders()</tspan>
+</text>
+</g>
+
+<g id="Screen$Attribute" transform="translate(932, 829)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="132" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Screen.Attribute
+</text>
+  <line x1="0" y1="18" x2="150" y2="18" stroke="black" />
+  <text x="4" y="30">~<tspan x="14">bg: byte</tspan>
+</text>
+  <text x="4" y="41">~<tspan x="14">fg: byte</tspan>
+</text>
+  <text x="4" y="52">~<tspan x="14">bl: boolean</tspan>
+</text>
+  <text x="4" y="63">~<tspan x="14">it: boolean</tspan>
+</text>
+  <text x="4" y="74">~<tspan x="14">un: boolean</tspan>
+</text>
+  <line x1="0" y1="80" x2="150" y2="80" stroke="black" />
+  <text x="4" y="92">c<tspan x="14">Attribute()</tspan>
+</text>
+  <text x="4" y="103">+<tspan x="14">get(at: Attribute)</tspan>
+</text>
+  <text x="4" y="114">+<tspan x="14">nequal(at: Attribute): boolean</tspan>
+</text>
+  <text x="4" y="125">+<tspan x="14">getEscape(): String</tspan>
+</text>
+</g>
+
+<g id="Screen$Cell" transform="translate(1105, 829)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="66" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Screen.Cell
+</text>
+  <line x1="0" y1="18" x2="150" y2="18" stroke="black" />
+  <text x="4" y="30">+<tspan x="14">ch: char</tspan>
+</text>
+  <text x="4" y="41">+<tspan x="14">at: Attribute</tspan>
+</text>
+  <line x1="0" y1="47" x2="150" y2="47" stroke="black" />
+  <text x="4" y="59">c<tspan x="14">Cell()</tspan>
+</text>
+</g>
+
+<g id="Stack&lt;T&gt;" transform="translate(366, 1004)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="88" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Stack&lt;T&gt;
+</text>
+  <line x1="0" y1="18" x2="150" y2="18" stroke="black" />
+  <text x="5" y="30">-<tspan x="14">pointer: Node&lt;T&gt;</tspan>
+</text>
+  <line x1="0" y1="36" x2="150" y2="36" stroke="black" />
+  <text x="4" y="48">c<tspan x="14">Stack()</tspan>
+</text>
+  <text x="4" y="59">+<tspan x="14">push(content: T)</tspan>
+</text>
+  <text x="4" y="70">+<tspan x="14">pop(): T</tspan>
+</text>
+  <text x="4" y="81">+<tspan x="14">isEmpty(): boolean</tspan>
+</text>
+</g>
+
+<g id="UI" transform="translate(677, 358)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="166" height="143" fill="white" stroke="black" />
+  <rect x="0" y="0" width="166" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="83" y="12" font-weight="bold" text-anchor="middle">UI
+</text>
+  <line x1="0" y1="18" x2="166" y2="18" stroke="black" />
+  <text x="5" y="30">-<tspan x="14">height: int</tspan>
+</text>
+  <text x="5" y="41">-<tspan x="14">width: int</tspan>
+</text>
+  <text x="5" y="52">-<tspan x="14" font-weight="bold">screen: Screen</tspan>
+</text>
+  <text x="5" y="63">-<tspan x="14">drawNumLines: boolean</tspan>
+</text>
+  <text x="5" y="74">-<tspan x="14">listWidth: int</tspan>
+</text>
+  <text x="5" y="85">-<tspan x="14">mapHeight: int</tspan>
+</text>
+  <text x="5" y="96">-<tspan x="14">mapWidth: int</tspan>
+</text>
+  <line x1="0" y1="102" x2="166" y2="102" stroke="black" />
+  <text x="4" y="114">c<tspan x="14">UI(height: int, width: int)</tspan>
+</text>
+  <text x="4" y="125">+<tspan x="14">print(ems: List&lt;Entity&gt;, els: List&lt;Entity&gt;)</tspan>
+</text>
+  <text x="4" y="136">+<tspan x="14">printEntity(s: Screen, y: int, e: Entity): int</tspan>
+</text>
+</g>
+
+<g id="Vector2" transform="translate(240, 829)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="182" height="110" fill="white" stroke="black" />
+  <rect x="0" y="0" width="182" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="91" y="12" font-weight="bold" text-anchor="middle">Vector2
+</text>
+  <line x1="0" y1="18" x2="182" y2="18" stroke="black" />
+  <text x="4" y="30">+<tspan x="14">x: int</tspan>
+</text>
+  <text x="4" y="41">+<tspan x="14">y: int</tspan>
+</text>
+  <line x1="0" y1="47" x2="182" y2="47" stroke="black" />
+  <text x="4" y="59">c<tspan x="14">Vector2(x: int, y: int)</tspan>
+</text>
+  <text x="4" y="70">+<tspan x="14">setValues(x: int, y: int)</tspan>
+</text>
+  <text x="4" y="81">+<tspan x="14">add(v2: Vector2)</tspan>
+</text>
+  <text x="4" y="92">+<tspan x="14">sub(v2: Vector2)</tspan>
+</text>
+  <text x="4" y="103">+<tspan x="14" text-decoration="underline">getDistance(v1: Vector2, v2: Vector2): double</tspan>
+</text>
+</g>
+
+<g id="Weapon" transform="translate(539, 1004)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="277" height="154" fill="white" stroke="black" />
+  <rect x="0" y="0" width="277" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="138" y="12" font-weight="bold" text-anchor="middle">Weapon
+</text>
+  <line x1="0" y1="18" x2="277" y2="18" stroke="black" />
+  <text x="5" y="30">-<tspan x="14">name: String</tspan>
+</text>
+  <text x="5" y="41">-<tspan x="14">multiplier: float</tspan>
+</text>
+  <text x="5" y="52">-<tspan x="14">material: Bonus</tspan>
+</text>
+  <text x="5" y="63">-<tspan x="14">charm: Bonus</tspan>
+</text>
+  <line x1="0" y1="69" x2="277" y2="69" stroke="black" />
+  <text x="4" y="81">c<tspan x="14">Weapon(name: String, multiplier: float, material: Bonus, charm: Bonus)</tspan>
+</text>
+  <text x="4" y="92">+<tspan x="14">setName(name: String)</tspan>
+</text>
+  <text x="4" y="103">+<tspan x="14">getName(): String</tspan>
+</text>
+  <text x="4" y="114">+<tspan x="14">setMultiplier(multiplier: float)</tspan>
+</text>
+  <text x="4" y="125">+<tspan x="14">getMultiplier(): float</tspan>
+</text>
+  <text x="4" y="136">+<tspan x="14">getMaterial(): Bonus</tspan>
+</text>
+  <text x="4" y="147">+<tspan x="14">getCharm(): Bonus</tspan>
+</text>
+</g>
+
+<g id="Weapon$Bonus" transform="translate(603, 1201)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="110" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">Weapon.Bonus
+</text>
+  <line x1="0" y1="18" x2="150" y2="18" stroke="black" />
+  <text x="5" y="30">-<tspan x="14">name: String</tspan>
+</text>
+  <text x="5" y="41">-<tspan x="14">bonus: float</tspan>
+</text>
+  <line x1="0" y1="47" x2="150" y2="47" stroke="black" />
+  <text x="4" y="59">c<tspan x="14">Bonus(name: String, bonus: float)</tspan>
+</text>
+  <text x="4" y="70">+<tspan x="14">setName(name: String)</tspan>
+</text>
+  <text x="4" y="81">+<tspan x="14">getName(): String</tspan>
+</text>
+  <text x="4" y="92">+<tspan x="14">setBonus(bonus: float)</tspan>
+</text>
+  <text x="4" y="103">+<tspan x="14">getBonus(): float</tspan>
+</text>
+</g>
+
+<g id="WeaponStash" transform="translate(44, 40)" font-family="Segoe UI" font-size="8" style="filter:url(#Shadow)">
+  <rect x="0" y="0" width="150" height="99" fill="white" stroke="black" />
+  <rect x="0" y="0" width="150" height="18" fill="rgb(255,255,255)" stroke="black" />
+  <text x="75" y="12" font-weight="bold" text-anchor="middle">WeaponStash
+</text>
+  <line x1="0" y1="18" x2="150" y2="18" stroke="black" />
+  <text x="5" y="30">-<tspan x="14" font-weight="bold">stack: Stack&lt;Weapon&gt;</tspan>
+</text>
+  <text x="5" y="41">-<tspan x="14">size: int</tspan>
+</text>
+  <line x1="0" y1="47" x2="150" y2="47" stroke="black" />
+  <text x="4" y="59">c<tspan x="14">WeaponStash()</tspan>
+</text>
+  <text x="4" y="70">+<tspan x="14">addWeapon(weapon: Weapon)</tspan>
+</text>
+  <text x="4" y="81">+<tspan x="14">getWeapon(): Weapon</tspan>
+</text>
+  <text x="4" y="92">+<tspan x="14">getSize(): int</tspan>
+</text>
+</g>
+
+</svg>

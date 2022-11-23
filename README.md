@@ -4,9 +4,7 @@ Das RPG-Projekt ist im Unterricht entstanden und enthält folgende Klassen.
 ### Achtung
 Dieses Projekt kann nicht mit dem Java-Editor ausgeführt werden. Es werden leichte Modifikationen benötigt um nicht ASCII Zeichen zu eliminieren. Außerdem ist der Output an eine Unix System angepasst und hat unter Windows leichte Nebeneffekte. Ich hoffe, sie können sich an die Demonstation im Unterricht erinnern, sonst bildet der Screenshot die Benutzteroberfläche noch einmals ab.
 
-<a class="site-logo" href="https://github.com/canis-git/rpg" title="RPG">
-	<img src="UML_overview.png" alt="RPG" style="width:auto;height:auto">
-</a>
+!(UML Collapsed)[diagram-collapsed.svg]
 
 ## Main:
 In der "Main" Klasse ist der "entry point" des Projekts enthalten. Es werden einige Parameter festgelegt und an die "Game" Klasse übergeben.
@@ -63,7 +61,4 @@ Die "UI" Klase implementiert nun, ähnlich wie bei "List" und "Group", die Funkt
 ## Vector2:
 Die "Vector2" Klasse stellt eine einfache Möglichkeit dar die Position eines Objektes in der Spielwelt festzuhalten. Leider wird er in diesem Projekt nur selten verwendet, in meiner aktuellen Version wird er aber vermehrt Anwendung finden.
 
-
-<a class="site-logo" href="https://github.com/canis-git/rpg" title="RPG">
-	<img src="UML.png" alt="RPG" style="width:auto;height:auto">
-</a>
+![RPG](diagram.svg)
