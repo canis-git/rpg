@@ -1,3 +1,5 @@
+package Rpg;
+
 public class List<T> {
 
         //      ATTRIBUTES

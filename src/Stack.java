@@ -1,3 +1,5 @@
+package Rpg;
+
 public class Stack<T> {
 
         //      ATTRIBUTES

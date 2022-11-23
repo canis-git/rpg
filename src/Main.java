@@ -1,3 +1,5 @@
+package Rpg;
+
 public class Main {
 
         static final int height = 50;

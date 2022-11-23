@@ -1,4 +1,7 @@
+package Rpg;
+
 public class Healer {
+
         //        ATTRIBUTES
         
         private Queue<Entity> queue;

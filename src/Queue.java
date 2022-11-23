@@ -1,4 +1,7 @@
+package Rpg;
+
 public class Queue<T> {
+
         //        ATTRIBUTES
 
         private Node<T> head;
