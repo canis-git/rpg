@@ -81,4 +81,8 @@ public abstract class Entity {
         getDamage() {
                 return strength;
         }
+
+        public int compareTo(Entity entity) {
+                return ((Integer)this.health).compareTo(entity.getHealth());
+        }
 }

@@ -30,14 +30,15 @@ public class List<T> {
         public int
         setIndex(int index) {
                 if (index > this.size || index < 0) {
-                        //this.toDummy();
-                        System.out.println("ERROR: tried to access an invalid index: " + Integer.toString(index));
+                        System.err.println("ERROR: tried to access an invalid index: " + Integer.toString(index));
                         System.exit(-1);
                 }
                 else {
-                        this.toRoot();
-                        while (this.index != index) {
-                                this.incIndex();
+                        if (index > this.index) {
+                                while (this.index != index) this.incIndex();
+                        }
+                        if (index < this.index) {
+                                while (this.index != index) this.decIndex();
                         }
                 }
                 return this.index;
@@ -154,19 +155,19 @@ public class List<T> {
 
         //      CONCATENATION
 
-        /*public static List
-        concat(List ... lists) {
-                List list = new List();
+        public static <T> List<T>
+        concat(List<T> ... lists) {
+                List<T> list = new List<T>();
+
                 for (int i = 0; i < lists.length; i++) {
-                        if (lists[i].getSize() == 0) {
-                                continue;
-                        }
                         lists[i].toRoot();
-                        do {
+                        while (lists[i].get() != null) {
                                 list.append(lists[i].get());
-                        } while (lists[i].incIndex() != lists[i].getSize());
+                                lists[i].incIndex();
+                        }
                 }
+
                 return list;
-        }*/
+        }
 }
 
