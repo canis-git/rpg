@@ -1,4 +1,4 @@
-public class List<T> {
+public class List<T extends Comparable<T>> {
 
         //      ATTRIBUTES
 
@@ -155,7 +155,7 @@ public class List<T> {
 
         //      CONCATENATION
 
-        public static <T> List<T>
+        public static <T extends Comparable<T>> List<T>
         concat(List<T> ... lists) {
                 List<T> list = new List<T>();
 
@@ -169,5 +169,58 @@ public class List<T> {
 
                 return list;
         }
-}
 
+        
+        public void
+        sortBubble() {
+                boolean keep_sorting = true;
+                while(keep_sorting) {
+                        keep_sorting = false;
+
+                        for (int i = 0; i < this.size - 1; i++) {
+                                T current = this.getAt(i);
+                                T next = this.getAt(i + 1);
+
+                                if (current.compareTo(next) > 0) {
+                                        this.setAt(i, next);
+                                        this.setAt(i + 1, current);
+                                        keep_sorting = true;
+                                }
+                        }
+                }
+        }
+                
+        public void
+        sortQuick() {
+                if (this.size > 1) {
+                        sortQuickRecursion(this.root, this.dummy.getPrevious());
+                }
+        }
+
+        public void
+        sortQuickRecursion(Node<T> start, Node<T> pivot) {
+                Node<T> current = start;
+                Node<T> cutoff = start;
+                T pivot_value = pivot.getContent();
+
+                while (current != pivot) {
+                        T current_value = current.getContent();
+                        T cutoff_value = cutoff.getContent();
+                        if (current_value.compareTo(pivot_value) < 0) {
+                                cutoff.setContent(current_value);
+                                current.setContent(cutoff_value);
+                                cutoff = cutoff.getNext();
+                        }
+                        current = current.getNext();
+                }
+                T cutoff_value = cutoff.getContent();
+                pivot.setContent(cutoff_value);
+                cutoff.setContent(pivot_value);
+
+
+                if (cutoff != start)
+                        sortQuickRecursion(start, cutoff.getPrevious());
+                if (cutoff != pivot)
+                        sortQuickRecursion(cutoff.getNext(), pivot);
+        }
+}

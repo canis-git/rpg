@@ -1,4 +1,4 @@
-public abstract class Entity {
+public abstract class Entity implements Comparable<Entity> {
 
         //      ATTRIBUTES
 
