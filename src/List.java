@@ -155,6 +155,7 @@ public class List<T extends Comparable<T>> {
 
         //      CONCATENATION
 
+	@SafeVarargs
         public static <T extends Comparable<T>> List<T>
         concat(List<T> ... lists) {
                 List<T> list = new List<T>();
